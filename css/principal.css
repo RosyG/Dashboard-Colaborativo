@@ -142,10 +142,11 @@ section#tech{
 section#cifras{
   background-color: black;
   display: inline-block;
-  height: 850px;
+  height: 810px;
   width: 100%;
   border-top: black 1px solid;
   border-left: black 1px solid;
+  font-size: 15px;
 }
 section#cifras>section>p{
   background: #FFC107;
@@ -159,7 +160,7 @@ section#cifras>section>p{
 p.data-name{
   color: gray;
   text-align: center;
-
+  margin-top: 30px;
 }
 p.cipher{
   color: lightgray;
@@ -167,7 +168,7 @@ p.cipher{
   background: gray;
   width: 50px;
   padding: 7px;
-  margin-left: 112px;
+  margin-left: 126px;
 }
 section#hse{
   display: inline-block;
