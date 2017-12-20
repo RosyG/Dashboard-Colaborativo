@@ -5,6 +5,7 @@
     <title>Laboratoria</title>
     <link rel="shortcut icon" href="assets/images/favicon.ico"/>
     <link rel="stylesheet" href="css/principal.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   </head>
   <body>
@@ -25,7 +26,7 @@
         </optgroup>
         <optgroup class="sede" label="LIMA">
 
-          <option value = "LIMA1" data-sede="LIM" data-generacion ="2016-2" class="generation">Lima 2016-2</option>
+          <option value ="LIMA1" data-sede="LIM" data-generacion ="2016-2" class="generation">Lima 2016-2</option>
           <option value="LIMA2" data-sede="LIM" data-generacion="2017-1" class="generation">Lima 2017-1</option>
           <option value="LIMA3" data-sede="LIM" data-generacion="2017-2" class="generation">Lima 2017-2</option>
 
@@ -48,16 +49,22 @@
         <option data-sprint="3" class="sprint">Sprint 4</option>
 
       </select>
+
+      <section id="iconos">
+        <a href="students.html"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></a>
+        <span>Estudiantes</span>
+        <a href="#"><i class="fa fa-user-circle-o fa-2x" aria-hidden="true"></i></a>
+        <span>Profesores</span>
+      </section>
       <section id="floating">
           <img id="logo" src="assets/images/l.png" alt="">
-          <select id="log" >
+          <select ondblclick="location = this.value;" id="log" >
             <option selected disabled hidden>Jonh</option>
-            <option>Perfil</option>
-            <option href="index.html">Cerrar sesión</option> <!--<select name="Enlaces" onchange="document.location.href:this.value;"> -->
+            <option value="profile.html">Perfil</option>
+            <option value="index.html">Cerrar sesión</option>
           </select>
       </section>
     </nav>
-
       <section id="general">
         <section id="column-1">
             <section id="tech"></section>
@@ -72,7 +79,7 @@
         <section id="column-3">
             <section id="cifras">
               <section id="datos">
-                <p>Datos</p>
+                <p>Datos</p> 
 
                 <section><p class="data-name">Cantidad total de estudiantes general</p><p id="dato-1" class="cipher" id = "cantidad-estudiantes"></p></section>
                 <section><p class="data-name">Cantidad de estudiantes que desertaron general</p><p id="dato-2" class="cipher"></p></section>
