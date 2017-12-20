@@ -235,7 +235,7 @@ function averageTeachers (allRatings) {
   averageTeacher = parseInt((averageTeacher / allRatings.length).toFixed(2));
   document.getElementById('dato-8').innerHTML = averageTeacher;//puntuación a teachers visible en la colunma derecha.
   //console.log(averageTeacher);//Muestra el promedio de la calificación de los Teaches en todos los sprints.
-
+  document.getElementById('dato-8').innerHTML = averageTeacher;//puntuación a teachers visible en la colunma derecha.
   //Gráfica de las puntuaciones de los teachers en promedio.
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawCharTeacher);
@@ -264,7 +264,7 @@ function averageJedi (allRatings) {
     averageJedi = parseInt((averageJedi / allRatings.length).toFixed(2));
     document.getElementById('dato-7').innerHTML = averageJedi;//puntuación a jedi master visible en la colunma derecha.
     //console.log(averageJedi);//Muestra el promedio de la calificación de los Jedi Master en todos los sprints.
-
+    document.getElementById('dato-7').innerHTML = averageJedi;//puntuación a jedi master visible en la colunma derecha.
     //Gráfica de las puntuaciones de los Jedi en promedio.
     google.charts.load('current', {'packages':['corechart']});
     google.charts.setOnLoadCallback(drawChartJedi);
@@ -459,7 +459,7 @@ function desertion (allTheStudents) {
   document.getElementById('dato-2').innerHTML = notActive;//Cantidad de estudiantes que desertaron visible en la colunma derecha.
   var percentageDesertion =((notActive/allTheStudents.length)*100).toFixed(2); //Al número del porcentaje es necesario redondearlo a dos cifras, es por eso que uso el método .toFixed().
   var percentageActive = 100 - percentageDesertion;
-
+  document.getElementById('dato-2').innerHTML = notActive;//Cantidad de estudiantes que desertaron visible en la colunma derecha.
   //Gráfica de la deserción de estudiantes
   google.charts.load("current", {packages:["corechart"]});
   google.charts.setOnLoadCallback(drawChartDesertionGeneral);
