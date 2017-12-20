@@ -42,13 +42,3 @@ Y en la parte de abajo se divide en dos secciones, por una parte están las grá
  En caso de que se decida entrar al perfil del usuario se muestra la siguiente pantalla
 
 ![imagen del perfil de jonh](assets/images/perfil.png)
-
-y si se entra en la parte de estudiantes se muestra la siguiente pantalla.
-
-![imagen de estudiantes]()
-
-
-
-
-
-## Diagrama de flujo.
